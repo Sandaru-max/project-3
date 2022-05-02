@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
- 
+
     
   
 }
@@ -55,13 +55,15 @@ button{
 /* Bubble */
 
 .bubble{
-    width: 100vw;
+    padding-left: 0%;
+    padding-right: 0%;
+    box-sizing: border-box;
+    width: 50%;
     position: absolute;
     bottom: 0vh;
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
-    
     
 }
 
@@ -70,7 +72,7 @@ button{
 animation: bubble-float 9s linear 0s infinite normal ;
 }
 #b1{
-    width: 90px;
+    width: 9%;
     animation-delay: 2s;
 }
 #b2{
@@ -124,7 +126,12 @@ animation: bubble-float 9s linear 0s infinite normal ;
         font-size: 10vw;
     }
     .cover{
+        display: flex;
+        height: 100vh;
         width: 100%;
-        height: 100%;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.1),rgba(4, 9, 30, 0.1)),url(images/wp4096537-aquarium-wallpapers.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
     }
 }
